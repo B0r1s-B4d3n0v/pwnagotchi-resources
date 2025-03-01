@@ -132,13 +132,13 @@ eg: `main.plugins.bt-tether.ip = "192.168.44.44"`
 We've all been there. Still more work to do ... :unamused:
 
 ## 3a - To get on a base level
-Lets get you to a standard starting point.\
+Lets get you to a standard starting point.
 
 ### 3a - Phone
 On your phone - Unpair and remove / forget pwnagotchi.
 
 ### 3a - pwnagotchi
-You will need your phones Bluetooth mac address\
+You will need your phones Bluetooth mac address
 * Android - Settings > About Phone > Status Information > Bluetooth Address
 * iPhone - :shrug: - ask Siri or fiddle-dick with `bluetoothctl scan`
 
@@ -195,7 +195,7 @@ Once paired, then copy and paste the following (again, with your own Bluetooth m
 `devices Paired`\
 `devices Trusted`\
 `devices Connected`\
-Each of the above commands should produce the same response:\
+Each of the above commands should produce the same response:
 > Device A1:B2:C3:D4:E5:F6 Badenov's S23 Ultra
 
 Now, lets exit.\
@@ -208,7 +208,7 @@ Now, lets exit.\
 
 If you're tethered ... you're welcome - now pay me - lolz
 
-## 4a - Solid No-Go!
+## 4a - That's a Solid No-Go!
 If your still having problems ...
 
 Hop back into the Bluetooth controller\
@@ -217,7 +217,7 @@ then\
 `devices Paired`\
 `devices Trusted`\
 `devices Connected`\
-Each of the above commands should produce the same response:\
+Each of the above commands should produce the same response:
 > Device A1:B2:C3:D4:E5:F6 Badenov's S23 Ultra
 
 If it doesn't - feed your hamster to your goldfish and toss your cat out the window!\
