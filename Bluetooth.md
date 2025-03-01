@@ -34,14 +34,15 @@ Is Bluetooth Tethering enabled?
 
 ## 1b - Pwnagotchi
 Is bt-tether plugin installed? (installed by default)\
-Is bt-Tether plugin enabled? (disabled by default)\
-Is bt-Tether plugin `config.toml` set correctly?
+Is bt-tether plugin by Jayofelony version 1.2?\
+Is bt-tether plugin enabled? (disabled by default)\
+Is bt-tether plugin `config.toml` set correctly?
 
 
 # 2 - Settings
-Enabling BlueTooth (and putting it in "discoverable" mode - when needed) should be obvious - if not, oof ... maybe Lego is more your speed :rofl:
+Enabling Bluetooth (and putting it in "discoverable" mode - when needed) should be obvious - if not, oof ... maybe Lego is more your speed :rofl:
 
-## 2a - BlueTooth Tethering
+## 2a - Bluetooth Tethering
 ### 2a - Android
 * :gear: Open your phone's Settings.
 * :signal_strength: Navigate to "Connections" -or- "Network & Internet".
@@ -57,7 +58,7 @@ Enabling BlueTooth (and putting it in "discoverable" mode - when needed) should 
 * find "Bluetooth Address" - write it down - you'll need it later.
 
 ### 2a - iPhone
-LOL GL IDK iPhone - maybe ask Siri to do it for you?\
+LOL GL IDK iPhone :shrug: - maybe ask Siri to do it for you?\
 The troubleshooting below is still correct - I just don't know the steps for drilling down the phones menus.
 
 ## 2b - Pwnagotchi
