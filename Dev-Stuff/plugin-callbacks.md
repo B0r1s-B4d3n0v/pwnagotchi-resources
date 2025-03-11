@@ -51,7 +51,7 @@ You can also see them in action using the `example.py` plugin.
         </tr>
         <tr>
             <td><a href="#on_ready">on_ready</a></td>
-            <td>Both</td>
+            <td>Auto</td>
             <td>5</td>
             <td>Called when everything is ready and the main loop is about to start.</td>
         </tr>
@@ -66,7 +66,7 @@ You can also see them in action using the `example.py` plugin.
         </tr>
         <tr>
             <td><a href="#on_rebooting">on_rebooting</a></td>
-            <td>Unknown</td>
+            <td>Auto</td>
             <td>0</td>
             <td>Called when the agent is rebooting the board. I've never seen this one called.</td>
         </tr>
@@ -285,7 +285,7 @@ Called when the hardware display setup is done, display is an hardware specific 
 
 ## on_ready <a name="on_ready"></a>
 
-`def on_ready(self, agent): # Manu & Auto mode`
+`def on_ready(self, agent): # Auto mode`
 
 Called when everything is ready and the main loop is about to start.
 
@@ -306,7 +306,7 @@ This will be triggered if the plugin gets unloaded (e.g. the user toggled the en
 
 ## on_rebooting <a name="on_rebooting"></a>
 
-`def on_rebooting(self, agent): # Never`
+`def on_rebooting(self, agent): # Auto`
 
 Called when the agent is rebooting the board. I've never seen this one called.
 
