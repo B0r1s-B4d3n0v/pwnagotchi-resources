@@ -6,7 +6,9 @@
 
 ## Developing your own plugin
 
-If you want to develop your own plugin, you have the following callbacks availaible.\
+This is basically an updated mashup of info from [pwnagotchi.org](https://pwnagotchi.org/contributing/index.html) & [example.py](https://github.com/jayofelony/pwnagotchi/blob/v2.9.5.3/pwnagotchi/plugins/default/example.py) along with my own info.
+
+If you want to develop your own plugin, you have the following callbacks available.\
 Click the link to scroll down for example usage and more info.\
 You can also see them in action using the `example.py` plugin.
 
