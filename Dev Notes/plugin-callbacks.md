@@ -150,7 +150,7 @@ You can also see them in action using the `example.py` plugin.
             <td><a href="#on_webhook">on_webhook</a></td>
             <td>Toggle</td>
             <td>0</td>
-            <td>You can provide some web-functionality here. Will be triggered if the user opens /plugins/<pluginname>.</td>
+            <td>You can provide some web-functionality here. Will be triggered if the user opens /plugins/[pluginname].</td>
         </tr>
         <tr>
             <th scope="row" colspan="4"><h3>Status based Triggers</h3><p>Triggered because of an status change</p></th>
@@ -334,7 +334,7 @@ This will be triggered roughly every 5 seconds during the time pwnagotchi has in
 
 ## on_epoch <a name="on_epoch"></a>
 
-`def on_epoch(self, agent, epoch, epoch_data): # A`
+`def on_epoch(self, agent, epoch, epoch_data): # Auto mode`
 
 Called when an epoch is over (where an epoch is a single loop of the main algorithm).
 
@@ -348,7 +348,7 @@ Triggered because of an event.
 
 ## on_association <a name="on_association"></a>
 
-`def on_association(self, agent, access_point): # A`
+`def on_association(self, agent, access_point): # Auto mode`
 
 Called when the agent is sending an association frame.
 
@@ -356,7 +356,7 @@ Called when the agent is sending an association frame.
 
 ## on_channel_hop <a name="on_channel_hop"></a>
 
-`def on_channel_hop(self, agent, channel): # A`
+`def on_channel_hop(self, agent, channel): # Auto mode`
 
 called when the agent is tuning on a specific channel.
 
@@ -364,7 +364,7 @@ called when the agent is tuning on a specific channel.
 
 ## on_deauthentication <a name="on_deauthentication"></a>
 
-`def on_deauthentication(self, agent, access_point, client_station): # A`
+`def on_deauthentication(self, agent, access_point, client_station): # Auto mode`
 
 Called when the agent is deauthenticating a client station from an AP.
 
@@ -372,7 +372,7 @@ Called when the agent is deauthenticating a client station from an AP.
 
 ## on_free_channel <a name="on_free_channel"></a>
 
-`def on_free_channel(self, agent, channel): # A`
+`def on_free_channel(self, agent, channel): # Auto mode`
 
 Called when a non overlapping wifi channel is found to be free.
 
@@ -380,7 +380,7 @@ Called when a non overlapping wifi channel is found to be free.
 
 ## on_handshake <a name="on_handshake"></a>
 
-`def on_handshake(self, agent, filename, access_point, client_station): # A`
+`def on_handshake(self, agent, filename, access_point, client_station): # Auto mode`
 
 Called when a new handshake is captured, access_point and client_station are json objects if the agent could match the BSSIDs to the current list, otherwise are just the strings of the BSSIDs.
 
@@ -388,7 +388,7 @@ Called when a new handshake is captured, access_point and client_station are jso
 
 ## on_wifi_updatep_list <a name="on_wifi_update"></a>
 
-`def on_wifi_update(self, agent, access_points): # A`
+`def on_wifi_update(self, agent, access_points): # Auto mode`
 
 Called when the agent refreshed its access points list.
 
@@ -396,7 +396,7 @@ Called when the agent refreshed its access points list.
 
 ## on_unfiltered_ap_list <a name="on_unfiltered_ap_list"></a>
 
-`def on_unfiltered_ap_list(self, agent, access_points): # A`
+`def on_unfiltered_ap_list(self, agent, access_points): # Auto mode`
 
 Called when the agent refreshed an unfiltered access point list this list contains all access points that were detected BEFORE filtering.
 
@@ -404,7 +404,7 @@ Called when the agent refreshed an unfiltered access point list this list contai
 
 ## on_peer_detected <a name="on_peer_detected"></a>
 
-`def on_peer_detected(self, agent, peer): # A`
+`def on_peer_detected(self, agent, peer): # Auto mode`
 
 Called when a new peer is detected.
 
@@ -412,7 +412,7 @@ Called when a new peer is detected.
 
 ## on_peer_lost <a name="on_peer_lost"></a>
 
-`def on_peer_lost(self, agent, peer): # A`
+`def on_peer_lost(self, agent, peer): # Auto mode`
 
 Called when a known peer is lost.
 
@@ -422,8 +422,8 @@ Called when a known peer is lost.
 
 `def on_webhook(self, path, request): # Button - Clicking the Web GUI Plugin Title on Plugins page`
 
-You can provide some web-functionality here. Will be triggered if the user opens /plugins/<pluginname>.\
-Called when http://<host>:<port>/plugins/<plugin>/ is called\
+You can provide some web-functionality here. Will be triggered if the user opens /plugins/[pluginname].\
+Called when http://[host]:[port]/plugins/[plugin]/ is called\
 must return a html page\
 IMPORTANT: If you use "POST"s, add a csrf-token (via csrf_token() and render_template_string)
 
@@ -435,7 +435,7 @@ Triggered because of an status change
 
 ## on_wait <a name="on_wait"></a>
 
-`def on_wait(self, agent, t): # A`
+`def on_wait(self, agent, t): # Auto mode`
 
 Called when the agent is waiting for t seconds.
 
@@ -443,7 +443,7 @@ Called when the agent is waiting for t seconds.
 
 ## on_bored <a name="on_bored"></a>
 
-`def on_bored(self, agent): # A`
+`def on_bored(self, agent): # Auto mode`
 
 Called when the status is set to bored.
 
@@ -451,7 +451,7 @@ Called when the status is set to bored.
 
 ## on_excited <a name="on_excited"></a>
 
-`def on_excited(self, agent): # A`
+`def on_excited(self, agent): # Auto mode`
 
 Called when the status is set to excited.
 
@@ -459,7 +459,7 @@ Called when the status is set to excited.
 
 ## on_lonely <a name="on_lonely"></a>
 
-`def on_lonely(self, agent): # A`
+`def on_lonely(self, agent): # Auto mode`
 
 Called when the status is set to lonely.
 
@@ -467,7 +467,7 @@ Called when the status is set to lonely.
 
 ## on_sad <a name="on_sad"></a>
 
-`def on_sad(self, agent): # A`
+`def on_sad(self, agent): # Auto mode`
 
 Called when the status is set to sad.
             
@@ -475,7 +475,7 @@ Called when the status is set to sad.
 
 ## on_sleep <a name="on_sleep"></a>
 
-`def on_sleep(self, agent, t): # A`
+`def on_sleep(self, agent, t): # Auto mode`
 
 Called when the agent is sleeping for t seconds.
 
