@@ -194,7 +194,7 @@ You can also see them in action using the `example.py` plugin.
    </tbody>
   <tfoot>
         <tr>
-            <th scope="row" colspan="4"><h3>AI deprecated</h3><p>AI was deprecated in [v2.9.2](https://github.com/jayofelony/pwnagotchi/releases/tag/v2.9.2) These callback have been deprecated as well.</p></th>
+            <th scope="row" colspan="4"><h3>AI deprecated</h3><p>AI was deprecated in <a href="https://github.com/jayofelony/pwnagotchi/releases/tag/v2.9.2">v2.9.2</a>. These callbacks have been deprecated as well.</p></th>
         </tr>
         <tr>
             <td><span style="color:red">on_ai_best_reward</td>
@@ -239,9 +239,6 @@ You can also see them in action using the `example.py` plugin.
             <td>Deprecated.</td>
         </tr>
   </tfoot>
-  <caption style="caption-side: bottom;">
-    Blah
-  </caption>
 </table>
 
 
@@ -385,7 +382,7 @@ Called when a non overlapping wifi channel is found to be free.
 
 `def on_handshake(self, agent, filename, access_point, client_station): # A`
 
-Called when a new handshake is captured, access_point and client_station are json objects if the agent could match the BSSIDs to the current list, otherwise are just the strings of the BSSIDs.</td>
+Called when a new handshake is captured, access_point and client_station are json objects if the agent could match the BSSIDs to the current list, otherwise are just the strings of the BSSIDs.
 
 
 
