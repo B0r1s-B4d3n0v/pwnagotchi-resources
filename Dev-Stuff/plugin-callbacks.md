@@ -243,11 +243,247 @@ You can also see them in action using the `example.py` plugin.
   </tfoot>
 </table>
 
+<br /><br /><hr /><br /><br />
+
+# Start-up Triggers
+Only fire once when plugin is loaded
 
 
-<hr /><br /><br /><br /><br />
+## on_loaded <a name="on_loaded"></a>
 
-# BetterCap Callbacks
+`def on_loaded(self): # Manu & Auto mode`
+
+The plugin enabled and loaded.
+
+
+## on_config_changed <a name="on_config_changed"></a>
+
+`def on_config_changed(self, config): # Manu & Auto mode`
+
+This will be triggered if the config has changed (also right after on_loaded).
+
+
+
+## on_ui_setup <a name="on_ui_setup"></a>
+
+`def on_ui_setup(self, ui): # Manu & Auto mode`
+
+Called to setup the ui elements.
+
+
+
+## on_display_setup <a name="on_display_setup"></a>
+
+`def on_display_setup(self, display): # Manu & Auto mode`
+
+Called when the hardware display setup is done, display is an hardware specific object.
+
+
+
+## on_ready <a name="on_ready"></a>
+
+`def on_ready(self, agent): # Auto mode`
+
+Called when everything is ready and the main loop is about to start.
+
+
+
+
+<br /><br /><hr /><br /><br />
+
+# Shutdown Triggers
+
+## on_unload <a name="on_unload"></a>
+
+`def on_unload(self, ui): # Toggle to Disable in Web GUI Plugins page`
+
+This will be triggered if the plugin gets unloaded (e.g. the user toggled the enable/disable switch). You should remove unneeded ui-elements here.
+
+
+
+## on_rebooting <a name="on_rebooting"></a>
+
+`def on_rebooting(self, agent): # Auto`
+
+Called when the agent is rebooting the board. I've never seen this one called.
+
+
+
+
+<br /><br /><hr /><br /><br />
+
+# Time based Triggers - sort of
+These can be triggered at any time between on_loaded and on_unload and are repeatedly called
+
+## on_ui_update <a name="on_ui_update"></a>
+
+`def on_ui_update(self, ui): # Manu & Auto mode`
+
+Called when the ui is updated - roughly every second or so.
+
+
+
+## on_internet_available <a name="on_internet_available"></a>
+
+`def on_internet_available(self, agent): # Manu & Auto mode`
+
+This will be triggered roughly every 5 seconds during the time pwnagotchi has internet.
+
+
+
+## on_epoch <a name="on_epoch"></a>
+
+`def on_epoch(self, agent, epoch, epoch_data): # Auto mode`
+
+Called when an epoch is over (where an epoch is a single loop of the main algorithm).
+
+
+
+
+<br /><br /><hr /><br /><br />
+
+# Event Triggers
+Triggered because of an event.
+
+## on_association <a name="on_association"></a>
+
+`def on_association(self, agent, access_point): # Auto mode`
+
+Called when the agent is sending an association frame.
+
+
+
+## on_channel_hop <a name="on_channel_hop"></a>
+
+`def on_channel_hop(self, agent, channel): # Auto mode`
+
+called when the agent is tuning on a specific channel.
+
+
+
+## on_deauthentication <a name="on_deauthentication"></a>
+
+`def on_deauthentication(self, agent, access_point, client_station): # Auto mode`
+
+Called when the agent is deauthenticating a client station from an AP.
+
+
+
+## on_free_channel <a name="on_free_channel"></a>
+
+`def on_free_channel(self, agent, channel): # Auto mode`
+
+Called when a non overlapping wifi channel is found to be free.
+
+
+
+## on_handshake <a name="on_handshake"></a>
+
+`def on_handshake(self, agent, filename, access_point, client_station): # Auto mode`
+
+Called when a new handshake is captured, access_point and client_station are json objects if the agent could match the BSSIDs to the current list, otherwise are just the strings of the BSSIDs.
+
+
+
+## on_wifi_updatep_list <a name="on_wifi_update"></a>
+
+`def on_wifi_update(self, agent, access_points): # Auto mode`
+
+Called when the agent refreshed its access points list.
+
+
+
+## on_unfiltered_ap_list <a name="on_unfiltered_ap_list"></a>
+
+`def on_unfiltered_ap_list(self, agent, access_points): # Auto mode`
+
+Called when the agent refreshed an unfiltered access point list this list contains all access points that were detected BEFORE filtering.
+
+
+
+## on_peer_detected <a name="on_peer_detected"></a>
+
+`def on_peer_detected(self, agent, peer): # Auto mode`
+
+Called when a new peer is detected.
+
+
+
+## on_peer_lost <a name="on_peer_lost"></a>
+
+`def on_peer_lost(self, agent, peer): # Auto mode`
+
+Called when a known peer is lost.
+
+
+
+## on_webhook <a name="on_webhook"></a>
+
+`def on_webhook(self, path, request): # Button - Clicking the Web GUI Plugin Title on Plugins page`
+
+You can provide some web-functionality here. Will be triggered if the user opens /plugins/[pluginname].\
+Called when http://[host]:[port]/plugins/[plugin]/ is called\
+must return a html page\
+IMPORTANT: If you use "POST"s, add a csrf-token (via csrf_token() and render_template_string)
+
+
+<br /><br /><hr /><br /><br />
+
+# Status based Triggers
+Triggered because of an status change
+
+## on_wait <a name="on_wait"></a>
+
+`def on_wait(self, agent, t): # Auto mode`
+
+Called when the agent is waiting for t seconds.
+
+
+
+## on_bored <a name="on_bored"></a>
+
+`def on_bored(self, agent): # Auto mode`
+
+Called when the status is set to bored.
+
+
+
+## on_excited <a name="on_excited"></a>
+
+`def on_excited(self, agent): # Auto mode`
+
+Called when the status is set to excited.
+
+
+
+## on_lonely <a name="on_lonely"></a>
+
+`def on_lonely(self, agent): # Auto mode`
+
+Called when the status is set to lonely.
+
+
+
+## on_sad <a name="on_sad"></a>
+
+`def on_sad(self, agent): # Auto mode`
+
+Called when the status is set to sad.
+            
+
+
+## on_sleep <a name="on_sleep"></a>
+
+`def on_sleep(self, agent, t): # Auto mode`
+
+Called when the agent is sleeping for t seconds.
+
+
+
+
+<br /><br /><hr /><br /><br />
+
+# BetterCap Callbacks for Pwnagotchi
 
 <a name="bcap_verified"></a>
 > [!CAUTION]
@@ -255,7 +491,8 @@ You can also see them in action using the `example.py` plugin.
 > "Verified" is because it was either documented, or it was triggered in my test script.\
 > "Undocumented | Unverified" - I did not verify the scope of the callbacks - so some of these may be scope limited. ¯\\\_(ツ)_/¯
 
-Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">bettercap.org</a> & `sudo grep -Rh "Events.Add" /home/pi/bettercap/`
+Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">bettercap.org</a> & `sudo grep -Rh "Events.Add" /home/pi/bettercap/`\
+[<a href="#bettercap_non_pwnagotchi">use in non-Pwnagotchi enviroment here</a>]
 
 <table>
     <thead>
@@ -500,262 +737,7 @@ Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">betterc
 </table>
 
 
-
-
-
 <br /><br /><hr /><br /><br />
-
-# Start-up Triggers
-Only fire once when plugin is loaded
-
-
-## on_loaded <a name="on_loaded"></a>
-
-`def on_loaded(self): # Manu & Auto mode`
-
-The plugin enabled and loaded.
-
-
-## on_config_changed <a name="on_config_changed"></a>
-
-`def on_config_changed(self, config): # Manu & Auto mode`
-
-This will be triggered if the config has changed (also right after on_loaded).
-
-
-
-## on_ui_setup <a name="on_ui_setup"></a>
-
-`def on_ui_setup(self, ui): # Manu & Auto mode`
-
-Called to setup the ui elements.
-
-
-
-## on_display_setup <a name="on_display_setup"></a>
-
-`def on_display_setup(self, display): # Manu & Auto mode`
-
-Called when the hardware display setup is done, display is an hardware specific object.
-
-
-
-## on_ready <a name="on_ready"></a>
-
-`def on_ready(self, agent): # Auto mode`
-
-Called when everything is ready and the main loop is about to start.
-
-
-
-
-<br /><br /><hr /><br /><br />
-
-# Shutdown Triggers
-
-## on_unload <a name="on_unload"></a>
-
-`def on_unload(self, ui): # Toggle to Disable in Web GUI Plugins page`
-
-This will be triggered if the plugin gets unloaded (e.g. the user toggled the enable/disable switch). You should remove unneeded ui-elements here.
-
-
-
-## on_rebooting <a name="on_rebooting"></a>
-
-`def on_rebooting(self, agent): # Auto`
-
-Called when the agent is rebooting the board. I've never seen this one called.
-
-
-
-
-<br /><br /><hr /><br /><br />
-
-# Time based Triggers - sort of
-These can be triggered at any time between on_loaded and on_unload and are repeatedly called
-
-## on_ui_update <a name="on_ui_update"></a>
-
-`def on_ui_update(self, ui): # Manu & Auto mode`
-
-Called when the ui is updated - roughly every second or so.
-
-
-
-## on_internet_available <a name="on_internet_available"></a>
-
-`def on_internet_available(self, agent): # Manu & Auto mode`
-
-This will be triggered roughly every 5 seconds during the time pwnagotchi has internet.
-
-
-
-## on_epoch <a name="on_epoch"></a>
-
-`def on_epoch(self, agent, epoch, epoch_data): # Auto mode`
-
-Called when an epoch is over (where an epoch is a single loop of the main algorithm).
-
-
-
-
-<br /><br /><hr /><br /><br />
-
-# Event Triggers
-Triggered because of an event.
-
-## on_association <a name="on_association"></a>
-
-`def on_association(self, agent, access_point): # Auto mode`
-
-Called when the agent is sending an association frame.
-
-
-
-## on_channel_hop <a name="on_channel_hop"></a>
-
-`def on_channel_hop(self, agent, channel): # Auto mode`
-
-called when the agent is tuning on a specific channel.
-
-
-
-## on_deauthentication <a name="on_deauthentication"></a>
-
-`def on_deauthentication(self, agent, access_point, client_station): # Auto mode`
-
-Called when the agent is deauthenticating a client station from an AP.
-
-
-
-## on_free_channel <a name="on_free_channel"></a>
-
-`def on_free_channel(self, agent, channel): # Auto mode`
-
-Called when a non overlapping wifi channel is found to be free.
-
-
-
-## on_handshake <a name="on_handshake"></a>
-
-`def on_handshake(self, agent, filename, access_point, client_station): # Auto mode`
-
-Called when a new handshake is captured, access_point and client_station are json objects if the agent could match the BSSIDs to the current list, otherwise are just the strings of the BSSIDs.
-
-
-
-## on_wifi_updatep_list <a name="on_wifi_update"></a>
-
-`def on_wifi_update(self, agent, access_points): # Auto mode`
-
-Called when the agent refreshed its access points list.
-
-
-
-## on_unfiltered_ap_list <a name="on_unfiltered_ap_list"></a>
-
-`def on_unfiltered_ap_list(self, agent, access_points): # Auto mode`
-
-Called when the agent refreshed an unfiltered access point list this list contains all access points that were detected BEFORE filtering.
-
-
-
-## on_peer_detected <a name="on_peer_detected"></a>
-
-`def on_peer_detected(self, agent, peer): # Auto mode`
-
-Called when a new peer is detected.
-
-
-
-## on_peer_lost <a name="on_peer_lost"></a>
-
-`def on_peer_lost(self, agent, peer): # Auto mode`
-
-Called when a known peer is lost.
-
-
-
-## on_webhook <a name="on_webhook"></a>
-
-`def on_webhook(self, path, request): # Button - Clicking the Web GUI Plugin Title on Plugins page`
-
-You can provide some web-functionality here. Will be triggered if the user opens /plugins/[pluginname].\
-Called when http://[host]:[port]/plugins/[plugin]/ is called\
-must return a html page\
-IMPORTANT: If you use "POST"s, add a csrf-token (via csrf_token() and render_template_string)
-
-
-<br /><br /><hr /><br /><br />
-
-# Status based Triggers
-Triggered because of an status change
-
-## on_wait <a name="on_wait"></a>
-
-`def on_wait(self, agent, t): # Auto mode`
-
-Called when the agent is waiting for t seconds.
-
-
-
-## on_bored <a name="on_bored"></a>
-
-`def on_bored(self, agent): # Auto mode`
-
-Called when the status is set to bored.
-
-
-
-## on_excited <a name="on_excited"></a>
-
-`def on_excited(self, agent): # Auto mode`
-
-Called when the status is set to excited.
-
-
-
-## on_lonely <a name="on_lonely"></a>
-
-`def on_lonely(self, agent): # Auto mode`
-
-Called when the status is set to lonely.
-
-
-
-## on_sad <a name="on_sad"></a>
-
-`def on_sad(self, agent): # Auto mode`
-
-Called when the status is set to sad.
-            
-
-
-## on_sleep <a name="on_sleep"></a>
-
-`def on_sleep(self, agent, t): # Auto mode`
-
-Called when the agent is sleeping for t seconds.
-
-
-
-
-
-
-
-
-<br /><br /><br /><br /><hr /><br /><br /><br /><br />
-
-
-
-
-
-
-
-# BetterCap Callbacks
-
-<br />
 
 # Bluetooth Triggers
 
@@ -809,7 +791,9 @@ A new service has been discovered for a BLE device.
 
 
 
-            
+
+<br /><br /><hr /><br /><br />
+
 # GPS Triggers
 
 ## on_bcap_gps_new <a name="on_bcap_gps_new"></a> [<a href="#bcap_verified">verified</a>]
@@ -820,7 +804,9 @@ A new GPS Location has been obtained.
 
 
 
-            
+
+<br /><br /><hr /><br /><br />
+
 # Wifi Triggers
 
 ## on_bcap_wifi_ap_lost <a name="on_bcap_wifi_ap_lost"></a> [<a href="#bcap_verified">verified</a>]
@@ -887,7 +873,9 @@ A WiFi client has been deauthenticated.
 
 
 
-            
+
+<br /><br /><hr /><br /><br />
+
 # Can Triggers
 
 ## on_bcap_can_device_lost <a name="on_bcap_can_device_lost"></a>
@@ -912,7 +900,9 @@ Undocumented | Unverified.
 
 
 
-            
+
+<br /><br /><hr /><br /><br />
+
 # HID Triggers
 
 ## on_bcap_hid_device_lost <a name="on_bcap_hid_device_lost"></a> [<a href="#bcap_verified">verified</a>]
@@ -930,7 +920,9 @@ A new wireless HID device has been discovered.
 
 
 
-            
+
+<br /><br /><hr /><br /><br />
+
 # HTTP|S Triggers
 
 ## on_bcap_http_spoofed_request <a name="on_bcap_http_spoofed_request"></a> [<a href="#bcap_verified">verified</a>]
@@ -962,7 +954,9 @@ A HTTPS response has been changed by a proxy module.
 
 
 
-            
+
+<br /><br /><hr /><br /><br />
+
 # Other Triggers
 
 ## on_bcap_mod_stopped <a name="on_bcap_mod_stopped"></a> [<a href="#bcap_verified">verified</a>]
@@ -1075,3 +1069,13 @@ Undocumented | Unverified.
 `def on_bcap_mod_started(self, agent, event):`
 
 A specific module started.
+
+
+
+<br /><br /><hr /><br /><br />
+
+<a name="bettercap_non_pwnagotchi"></a>
+> [!TIP]
+> If you want to use these callbacks outside of the Pwnagotchi environment\
+> remove `on_bcap_` and replace underscores with periods.\
+`on_bcap_ble_device_new` becaomes `ble.device.new`
