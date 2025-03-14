@@ -250,9 +250,9 @@ You can also see them in action using the `example.py` plugin.
 # BetterCap Callbacks
 
 <a name="bcap_verified"></a>
-> [!CAUTION]
-> I grepped BC code for "Events.Add" and these callbacks were the result. BC website does not reference some of these.
-> "Verified" is because it was either documented, or it was triggered in my test script.
+> [!CAUTION] about
+> I grepped BC code for "Events.Add" and these callbacks were the result. BC website does not reference some of these.\
+> "Verified" is because it was either documented, or it was triggered in my test script.\
 > "Undocumented | Unverified" - I did not verify the scope of the callbacks - so some of these may be scope limited. ¯\\\_(ツ)_/¯
 
 Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">bettercap.org</a> & `sudo grep -Rh "Events.Add" /home/pi/bettercap/`
