@@ -508,7 +508,7 @@ Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">betterc
         </tr>
         <tr>
             <td><a href="#on_bcap_ble_device_new">on_bcap_ble_device_new</a></td>
-            <td>★</td>
+            <td>✅</td>
             <td>A new BLE device has been discovered.</td>
         </tr>
         <tr>
@@ -546,7 +546,7 @@ Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">betterc
         </tr>
         <tr>
             <td><a href="#on_bcap_gps_new">on_bcap_gps_new</a></td>
-            <td>★</td>
+            <td>⭐</td>
             <td>A new GPS Location has been obtained</td>
         </tr>
         <tr>
@@ -564,7 +564,7 @@ Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">betterc
         </tr>
         <tr>
             <td><a href="#on_bcap_wifi_bruteforce_success">on_bcap_wifi_bruteforce_success</a></td>
-            <td></td>
+            <td>❌</td>
             <td>Undocumented | Unverified.</td>
         </tr>
         <tr>
@@ -1075,7 +1075,7 @@ A specific module started.
 <br /><br /><hr /><br /><br />
 
 <a name="bettercap_non_pwnagotchi"></a>
+# BetterCap Callbacks outside of Pwnagotchi
 > [!TIP]
-> If you want to use these callbacks outside of the Pwnagotchi environment\
-> remove `on_bcap_` and replace underscores with periods.\
-`on_bcap_ble_device_new` becaomes `ble.device.new`
+> If you want to use the above callbacks outside of the Pwnagotchi environment remove `on_bcap_` and replace underscores with periods.\
+`on_bcap_ble_device_new` becomes `ble.device.new`
