@@ -270,37 +270,37 @@ Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">betterc
             <th scope="row" colspan="4"><h3 name="bluetooth_triggers">Bluetooth Triggers</h3></th>
         </tr>
         <tr>
-            <td><a href="on_bcap_ble_device_new">on_bcap_ble_device_new</a></td>
+            <td><a href="#on_bcap_ble_device_new">on_bcap_ble_device_new</a></td>
             <td>★</td>
             <td>A new BLE device has been discovered.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_ble_device_lost">on_bcap_ble_device_lost</a></td>
+            <td><a href="#on_bcap_ble_device_lost">on_bcap_ble_device_lost</a></td>
             <td>★</td>
             <td>A previously discovered BLE device is not in range anymore.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_ble_connection_timeout">on_bcap_ble_connection_timeout</a></td>
+            <td><a href="#on_bcap_ble_connection_timeout">on_bcap_ble_connection_timeout</a></td>
             <td>★</td>
             <td>Connection to the specified BLE device timed out.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_ble_device_characteristic_discovered">on_bcap_ble_device_characteristic_discovered</a></td>
+            <td><a href="#on_bcap_ble_device_characteristic_discovered">on_bcap_ble_device_characteristic_discovered</a></td>
             <td>★</td>
             <td>A new characteristic has been discovered for a BLE device.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_ble_device_connected">on_bcap_ble_device_connected</a></td>
+            <td><a href="#on_bcap_ble_device_connected">on_bcap_ble_device_connected</a></td>
             <td>★</td>
             <td>Connected to the selected BLE device.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_ble_device_disconnected">on_bcap_ble_device_disconnected</a></td>
+            <td><a href="#on_bcap_ble_device_disconnected">on_bcap_ble_device_disconnected</a></td>
             <td></td>
             <td>Undocumented | Unverified.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_ble_device_service_discovered">on_bcap_ble_device_service_discovered</a></td>
+            <td><a href="#on_bcap_ble_device_service_discovered">on_bcap_ble_device_service_discovered</a></td>
             <td>★</td>
             <td>A new service has been discovered for a BLE device.</td>
         </tr>
@@ -308,7 +308,7 @@ Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">betterc
             <th scope="row" colspan="4"><h3 name="gps_triggers">GPS Triggers</h3></th>
         </tr>
         <tr>
-            <td><a href="on_bcap_gps_new">on_bcap_gps_new</a></td>
+            <td><a href="#on_bcap_gps_new">on_bcap_gps_new</a></td>
             <td>★</td>
             <td>A new GPS Location has been obtained</td>
         </tr>
@@ -316,47 +316,47 @@ Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">betterc
             <th scope="row" colspan="4"><h3 name="wifi_triggers">Wifi Triggers</h3></th>
         </tr>
         <tr>
-            <td><a href="on_bcap_wifi_ap_lost">on_bcap_wifi_ap_lost</a></td>
+            <td><a href="#on_bcap_wifi_ap_lost">on_bcap_wifi_ap_lost</a></td>
             <td>★</td>
             <td>A previously discovered WiFi access point is not in range anymore.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_wifi_ap_new">on_bcap_wifi_ap_new</a></td>
+            <td><a href="#on_bcap_wifi_ap_new">on_bcap_wifi_ap_new</a></td>
             <td>★</td>
             <td>A new WiFi access point has been discovered.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_wifi_bruteforce_success">on_bcap_wifi_bruteforce_success</a></td>
+            <td><a href="#on_bcap_wifi_bruteforce_success">on_bcap_wifi_bruteforce_success</a></td>
             <td></td>
             <td>Undocumented | Unverified.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_wifi_client_deauthentication">on_bcap_wifi_client_deauthentication</a></td>
+            <td><a href="#on_bcap_wifi_client_deauthentication">on_bcap_wifi_client_deauthentication</a></td>
             <td>★</td>
             <td>WPA/WPA2 deauthentication frame has been detected.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_wifi_client_handshake">on_bcap_wifi_client_handshake</a></td>
+            <td><a href="#on_bcap_wifi_client_handshake">on_bcap_wifi_client_handshake</a></td>
             <td>★</td>
             <td>WPA/WPA2 key material has been captured.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_wifi_client_lost">on_bcap_wifi_client_lost</a></td>
+            <td><a href="#on_bcap_wifi_client_lost">on_bcap_wifi_client_lost</a></td>
             <td>★</td>
             <td>A previously discovered WiFi client station disconnected from its AP.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_wifi_client_new">on_bcap_wifi_client_new</a></td>
+            <td><a href="#on_bcap_wifi_client_new">on_bcap_wifi_client_new</a></td>
             <td>★</td>
             <td>A new WiFi client station has been discovered.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_wifi_client_probe">on_bcap_wifi_client_probe</a></td>
+            <td><a href="#on_bcap_wifi_client_probe">on_bcap_wifi_client_probe</a></td>
             <td>★</td>
             <td>A WiFi client station is sending a probe for an ESSID.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_wifi_deauthentication">on_bcap_wifi_deauthentication</a></td>
+            <td><a href="#on_bcap_wifi_deauthentication">on_bcap_wifi_deauthentication</a></td>
             <td>★</td>
             <td>A WiFi client has been deauthenticated</td>
         </tr>
@@ -364,17 +364,17 @@ Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">betterc
             <th scope="row" colspan="4"><h3 name="can_triggers">Can Triggers</h3></th>
         </tr>
         <tr>
-            <td><a href="on_bcap_can_device_lost">on_bcap_can_device_lost</a></td>
+            <td><a href="#on_bcap_can_device_lost">on_bcap_can_device_lost</a></td>
             <td></td>
             <td>Undocumented | Unverified.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_can_device_new">on_bcap_can_device_new</a></td>
+            <td><a href="#on_bcap_can_device_new">on_bcap_can_device_new</a></td>
             <td></td>
             <td>Undocumented | Unverified.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_can_message">on_bcap_can_message</a></td>
+            <td><a href="#on_bcap_can_message">on_bcap_can_message</a></td>
             <td></td>
             <td>Undocumented | Unverified.</td>
         </tr>
@@ -382,12 +382,12 @@ Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">betterc
             <th scope="row" colspan="4"><h3 name="hid_triggers">HID Triggers</h3></th>
         </tr>
         <tr>
-            <td><a href="on_bcap_hid_device_lost">on_bcap_hid_device_lost</a></td>
+            <td><a href="#on_bcap_hid_device_lost">on_bcap_hid_device_lost</a></td>
             <td>★</td>
             <td>A previously discovered wireless HID device is not in range anymore.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_hid_device_new">on_bcap_hid_device_new</a></td>
+            <td><a href="#on_bcap_hid_device_new">on_bcap_hid_device_new</a></td>
             <td>★</td>
             <td>A new wireless HID device has been discovered.</td>
         </tr>
@@ -395,22 +395,22 @@ Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">betterc
             <th scope="row" colspan="4"><h3 name="http_triggers">HTTP|S Triggers</h3></th>
         </tr>
         <tr>
-            <td><a href="on_bcap_http_spoofed_request">on_bcap_http_spoofed_request</a></td>
+            <td><a href="#on_bcap_http_spoofed_request">on_bcap_http_spoofed_request</a></td>
             <td>★</td>
             <td>A HTTP request has been changed by a proxy module.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_http_spoofed_response">on_bcap_http_spoofed_response</a></td>
+            <td><a href="#on_bcap_http_spoofed_response">on_bcap_http_spoofed_response</a></td>
             <td>★</td>
             <td>A HTTP response has been changed by a proxy module.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_https_spoofed_request">on_bcap_https_spoofed_request</a></td>
+            <td><a href="#on_bcap_https_spoofed_request">on_bcap_https_spoofed_request</a></td>
             <td>★</td>
             <td>A HTTPS request has been changed by a proxy module.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_https_spoofed_response">on_bcap_https_spoofed_response</a></td>
+            <td><a href="#on_bcap_https_spoofed_response">on_bcap_https_spoofed_response</a></td>
             <td>★</td>
             <td>A HTTPS response has been changed by a proxy module.</td>
         </tr>
@@ -418,82 +418,82 @@ Sources: <a href="https://www.bettercap.org/modules/core/events.stream/">betterc
             <th scope="row" colspan="4"><h3 name="other_triggers">Other Triggers</h3></th>
         </tr>
         <tr>
-            <td><a href="on_bcap_mod_stopped">on_bcap_mod_stopped</a></td>
+            <td><a href="#on_bcap_mod_stopped">on_bcap_mod_stopped</a></td>
             <td>★</td>
             <td>A specific module stopped.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_sys_log">on_bcap_sys_log</a></td>
+            <td><a href="#on_bcap_sys_log">on_bcap_sys_log</a></td>
             <td>★</td>
             <td>Simple log message event.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_endpoint_lost">on_bcap_endpoint_lost</a></td>
+            <td><a href="#on_bcap_endpoint_lost">on_bcap_endpoint_lost</a></td>
             <td>★</td>
             <td>A previously discovered network host disconnected from this network.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_endpoint_new">on_bcap_endpoint_new</a></td>
+            <td><a href="#on_bcap_endpoint_new">on_bcap_endpoint_new</a></td>
             <td>★</td>
             <td>A new network host has been discovered.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_gateway_change">on_bcap_gateway_change</a></td>
+            <td><a href="#on_bcap_gateway_change">on_bcap_gateway_change</a></td>
             <td>★</td>
             <td>IPv4 or IPv6 gateway change detected.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_graph_edge_new">on_bcap_graph_edge_new</a></td>
+            <td><a href="#on_bcap_graph_edge_new">on_bcap_graph_edge_new</a></td>
             <td></td>
             <td>Undocumented | Unverified.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_graph_node_new">on_bcap_graph_node_new</a></td>
+            <td><a href="#on_bcap_graph_node_new">on_bcap_graph_node_new</a></td>
             <td></td>
             <td>Undocumented | Unverified.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_net_sniff_*">on_bcap_net_sniff_*</a></td>
+            <td><a href="#on_bcap_net_sniff_*">on_bcap_net_sniff_*</a></td>
             <td>★</td>
             <td>A new payload has been sniffed..</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_session_closing">on_bcap_session_closing</a></td>
+            <td><a href="#on_bcap_session_closing">on_bcap_session_closing</a></td>
             <td>★</td>
             <td>The session is stopping.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_session_started">on_bcap_session_started</a></td>
+            <td><a href="#on_bcap_session_started">on_bcap_session_started</a></td>
             <td>★</td>
             <td>The session started.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_session_stopped">on_bcap_session_stopped</a></td>
+            <td><a href="#on_bcap_session_stopped">on_bcap_session_stopped</a></td>
             <td></td>
             <td>Undocumented | Unverified.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_syn_scan">on_bcap_syn_scan</a></td>
+            <td><a href="#on_bcap_syn_scan">on_bcap_syn_scan</a></td>
             <td>★</td>
             <td>An open port has been found on the target host.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_tick">on_bcap_tick</a></td>
+            <td><a href="#on_bcap_tick">on_bcap_tick</a></td>
             <td>★</td>
             <td>An event generated by the ticker module.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_update_available">on_bcap_update_available</a></td>
+            <td><a href="#on_bcap_update_available">on_bcap_update_available</a></td>
             <td>★</td>
             <td>An update is available.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_zeroconf_service">on_bcap_zeroconf_service</a></td>
+            <td><a href="#on_bcap_zeroconf_service">on_bcap_zeroconf_service</a></td>
             <td></td>
             <td>Undocumented | Unverified.</td>
         </tr>
         <tr>
-            <td><a href="on_bcap_mod_started">on_bcap_mod_started</a></td>
+            <td><a href="#on_bcap_mod_started">on_bcap_mod_started</a></td>
             <td>★</td>
             <td>A specific module started.</td>
         </tr>
@@ -759,35 +759,35 @@ Called when the agent is sleeping for t seconds.
 
 # Bluetooth Triggers
 
-## on_bcap_ble_device_new <a name="on_bcap_ble_device_new"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_ble_device_new <a name="on_bcap_ble_device_new"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_ble_device_new(self, agent, event):`
 
 A new BLE device has been discovered.
 
 
-## on_bcap_ble_device_lost <a name="on_bcap_ble_device_lost"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_ble_device_lost <a name="on_bcap_ble_device_lost"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_ble_device_lost(self, agent, event):`
 
 A previously discovered BLE device is not in range anymore.
 
 
-## on_bcap_ble_connection_timeout <a name="on_bcap_ble_connection_timeout"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_ble_connection_timeout <a name="on_bcap_ble_connection_timeout"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_ble_connection_timeout(self, agent, event):`
 
 Connection to the specified BLE device timed out.
 
 
-## on_bcap_ble_device_characteristic_discovered <a name="on_bcap_ble_device_characteristic_discovered"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_ble_device_characteristic_discovered <a name="on_bcap_ble_device_characteristic_discovered"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_ble_device_characteristic_discovered(self, agent, event):`
 
 A new characteristic has been discovered for a BLE device.
 
 
-## on_bcap_ble_device_connected <a name="on_bcap_ble_device_connected"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_ble_device_connected <a name="on_bcap_ble_device_connected"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_ble_device_connected(self, agent, event):`
 
@@ -801,7 +801,7 @@ Connected to the selected BLE device.
 Undocumented | Unverified.
 
 
-## on_bcap_ble_device_service_discovered <a name="on_bcap_ble_device_service_discovered"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_ble_device_service_discovered <a name="on_bcap_ble_device_service_discovered"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_ble_device_service_discovered(self, agent, event):`
 
@@ -812,7 +812,7 @@ A new service has been discovered for a BLE device.
             
 # GPS Triggers
 
-## on_bcap_gps_new <a name="on_bcap_gps_new"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_gps_new <a name="on_bcap_gps_new"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_gps_new(self, agent, event):`
 
@@ -823,14 +823,14 @@ A new GPS Location has been obtained.
             
 # Wifi Triggers
 
-## on_bcap_wifi_ap_lost <a name="on_bcap_wifi_ap_lost"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_wifi_ap_lost <a name="on_bcap_wifi_ap_lost"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_wifi_ap_lost(self, agent, event):`
 
 A previously discovered WiFi access point is not in range anymore.
 
 
-## on_bcap_wifi_ap_new <a name="on_bcap_wifi_ap_new"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_wifi_ap_new <a name="on_bcap_wifi_ap_new"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_wifi_ap_new(self, agent, event):`
 
@@ -844,42 +844,42 @@ A new WiFi access point has been discovered.
 Undocumented | Unverified.
 
 
-## on_bcap_wifi_client_deauthentication <a name="on_bcap_wifi_client_deauthentication"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_wifi_client_deauthentication <a name="on_bcap_wifi_client_deauthentication"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_wifi_client_deauthentication(self, agent, event):`
 
 WPA/WPA2 deauthentication frame has been detected.
 
 
-## on_bcap_wifi_client_handshake <a name="on_bcap_wifi_client_handshake"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_wifi_client_handshake <a name="on_bcap_wifi_client_handshake"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_wifi_client_handshake(self, agent, event):`
 
 WPA/WPA2 key material has been captured.
 
 
-## on_bcap_wifi_client_lost <a name="on_bcap_wifi_client_lost"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_wifi_client_lost <a name="on_bcap_wifi_client_lost"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_wifi_client_lost(self, agent, event):`
 
 A previously discovered WiFi client station disconnected from its AP.
 
 
-## on_bcap_wifi_client_new <a name="on_bcap_wifi_client_new"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_wifi_client_new <a name="on_bcap_wifi_client_new"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_wifi_client_new(self, agent, event):`
 
 A new WiFi client station has been discovered.
 
 
-## on_bcap_wifi_client_probe <a name="on_bcap_wifi_client_probe"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_wifi_client_probe <a name="on_bcap_wifi_client_probe"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_wifi_client_probe(self, agent, event):`
 
 A WiFi client station is sending a probe for an ESSID.
 
 
-## on_bcap_wifi_deauthentication <a name="on_bcap_wifi_deauthentication"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_wifi_deauthentication <a name="on_bcap_wifi_deauthentication"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_wifi_deauthentication(self, agent, event):`
 
@@ -915,14 +915,14 @@ Undocumented | Unverified.
             
 # HID Triggers
 
-## on_bcap_hid_device_lost <a name="on_bcap_hid_device_lost"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_hid_device_lost <a name="on_bcap_hid_device_lost"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_hid_device_lost(self, agent, event):`
 
 A previously discovered wireless HID device is not in range anymore.
 
 
-## on_bcap_hid_device_new <a name="on_bcap_hid_device_new"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_hid_device_new <a name="on_bcap_hid_device_new"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_hid_device_new(self, agent, event):`
 
@@ -933,28 +933,28 @@ A new wireless HID device has been discovered.
             
 # HTTP|S Triggers
 
-## on_bcap_http_spoofed_request <a name="on_bcap_http_spoofed_request"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_http_spoofed_request <a name="on_bcap_http_spoofed_request"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_http_spoofed_request(self, agent, event):`
 
 A HTTP request has been changed by a proxy module.
 
 
-## on_bcap_http_spoofed_response <a name="on_bcap_http_spoofed_response"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_http_spoofed_response <a name="on_bcap_http_spoofed_response"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_http_spoofed_response(self, agent, event):`
 
 A HTTP response has been changed by a proxy module.
 
 
-## on_bcap_https_spoofed_request <a name="on_bcap_https_spoofed_request"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_https_spoofed_request <a name="on_bcap_https_spoofed_request"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_https_spoofed_request(self, agent, event):`
 
 A HTTPS request has been changed by a proxy module.
 
 
-## on_bcap_https_spoofed_response <a name="on_bcap_https_spoofed_response"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_https_spoofed_response <a name="on_bcap_https_spoofed_response"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_https_spoofed_response(self, agent, event):`
 
@@ -965,35 +965,35 @@ A HTTPS response has been changed by a proxy module.
             
 # Other Triggers
 
-## on_bcap_mod_stopped <a name="on_bcap_mod_stopped"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_mod_stopped <a name="on_bcap_mod_stopped"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_mod_stopped(self, agent, event):`
 
 A specific module stopped.
 
 
-## on_bcap_sys_log <a name="on_bcap_sys_log"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_sys_log <a name="on_bcap_sys_log"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_sys_log(self, agent, event):`
 
 Simple log message event.
 
 
-## on_bcap_endpoint_lost <a name="on_bcap_endpoint_lost"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_endpoint_lost <a name="on_bcap_endpoint_lost"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_endpoint_lost(self, agent, event):`
 
 A previously discovered network host disconnected from this network.
 
 
-## on_bcap_endpoint_new <a name="on_bcap_endpoint_new"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_endpoint_new <a name="on_bcap_endpoint_new"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_endpoint_new(self, agent, event):`
 
 A new network host has been discovered.
 
 
-## on_bcap_gateway_change <a name="on_bcap_gateway_change"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_gateway_change <a name="on_bcap_gateway_change"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_gateway_change(self, agent, event):`
 
@@ -1014,21 +1014,21 @@ Undocumented | Unverified.
 Undocumented | Unverified.
 
 
-## on_bcap_net_sniff_* <a name="on_bcap_net_sniff_*"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_net_sniff_* <a name="on_bcap_net_sniff_*"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_net_sniff(self, agent, event):`
 
 A new payload has been sniffed..
 
 
-## on_bcap_session_closing <a name="on_bcap_session_closing"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_session_closing <a name="on_bcap_session_closing"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_session_closing(self, agent, event):`
 
 The session is stopping.
 
 
-## on_bcap_session_started <a name="on_bcap_session_started"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_session_started <a name="on_bcap_session_started"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_session_started(self, agent, event):`
 
@@ -1042,21 +1042,21 @@ The session started
 Undocumented | Unverified.
 
 
-## on_bcap_syn_scan <a name="on_bcap_syn_scan"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_syn_scan <a name="on_bcap_syn_scan"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_syn_scan(self, agent, event):`
 
 An open port has been found on the target host.
 
 
-## on_bcap_tick <a name="on_bcap_tick"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_tick <a name="on_bcap_tick"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_tick(self, agent, event):`
 
 An event generated by the ticker module.
 
 
-## on_bcap_update_available <a name="on_bcap_update_available"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_update_available <a name="on_bcap_update_available"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_update_available(self, agent, event):`
 
@@ -1070,7 +1070,7 @@ An update is available.
 Undocumented | Unverified.
 
 
-## on_bcap_mod_started <a name="on_bcap_mod_started"></a> [<a href="bcap_verified">verified</a>]
+## on_bcap_mod_started <a name="on_bcap_mod_started"></a> [<a href="#bcap_verified">verified</a>]
 
 `def on_bcap_mod_started(self, agent, event):`
 
