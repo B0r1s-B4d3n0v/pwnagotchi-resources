@@ -125,18 +125,6 @@ You can also see them in action using the `example.py` plugin.
             <td>Called when a new handshake is captured, access_point and client_station are json objects if the agent could match the BSSIDs to the current list, otherwise they are just the strings of the BSSIDs.</td>
         </tr>
         <tr>
-            <td><a href="#on_wifi_update">on_wifi_update</a></td>
-            <td>Auto</td>
-            <td>0</td>
-            <td>Called when the agent refreshed its access points list.</td>
-        </tr>
-        <tr>
-            <td><a href="#on_unfiltered_ap_list">on_unfiltered_ap_list</a></td>
-            <td>Auto</td>
-            <td>0</td>
-            <td>Called when the agent refreshed an unfiltered access point list this list contains all access points that were detected BEFORE filtering.</td>
-        </tr>
-        <tr>
             <td><a href="#on_peer_detected">on_peer_detected</a></td>
             <td>Auto</td>
             <td>0</td>
@@ -149,19 +137,43 @@ You can also see them in action using the `example.py` plugin.
             <td>Called when a known peer is lost.</td>
         </tr>
         <tr>
+            <td><a href="#on_unfiltered_ap_list">on_unfiltered_ap_list</a></td>
+            <td>Auto</td>
+            <td>0</td>
+            <td>Called when the agent refreshed an unfiltered access point list this list contains all access points that were detected BEFORE filtering.</td>
+        </tr>
+        <tr>
+            <td><a href="#on_unread_inbox">#on_unread_inbox</a></td>
+            <td>Auto</td>
+            <td>0</td>
+            <td>Called when there are unread messages.</td>
+        </tr>
+        <tr>
+            <td><a href="#on_updating">#on_updating</a></td>
+            <td>Auto</td>
+            <td>0</td>
+            <td>Called when updating.</td>
+        </tr>
+        <tr>
             <td><a href="#on_webhook">on_webhook</a></td>
             <td>Toggle</td>
             <td>0</td>
             <td>You can provide some web-functionality here. Will be triggered if the user opens /plugins/[pluginname].</td>
         </tr>
         <tr>
+            <td><a href="#on_wifi_update">on_wifi_update</a></td>
+            <td>Auto</td>
+            <td>0</td>
+            <td>Called when the agent refreshed its access points list.</td>
+        </tr>
+        <tr>
             <th scope="row" colspan="4"><h3>Status based Triggers</h3><p>Triggered because of an status change</p></th>
         </tr>
         <tr>
-            <td><a href="#on_wait">on_wait</a></td>
+            <td><a href="on_angry">on_angry</a></td>
             <td>Auto</td>
             <td>0</td>
-            <td>Called when the agent is waiting for t seconds.</td>
+            <td>Called when the status is set to angry.</td>
         </tr>
         <tr>
             <td><a href="#on_bored">on_bored</a></td>
@@ -174,6 +186,12 @@ You can also see them in action using the `example.py` plugin.
             <td>Auto</td>
             <td>0</td>
             <td>Called when the status is set to excited.</td>
+        </tr>
+        <tr>
+            <td><a href="on_greatful">on_greatful</a></td>
+            <td>Auto</td>
+            <td>0</td>
+            <td>Called when the status is set to greatful.</td>
         </tr>
         <tr>
             <td><a href="#on_lonely">on_lonely</a></td>
@@ -193,7 +211,13 @@ You can also see them in action using the `example.py` plugin.
             <td>0</td>
             <td>Called when the agent is sleeping for t seconds.</td>
         </tr>
-   </tbody>
+        <tr>
+            <td><a href="#on_wait">on_wait</a></td>
+            <td>Auto</td>
+            <td>0</td>
+            <td>Called when the agent is waiting for t seconds.</td>
+        </tr>
+        </tbody>
   <tfoot>
         <tr>
             <th scope="row" colspan="4"><h3>AI deprecated</h3><p>AI was deprecated in <a href="https://github.com/jayofelony/pwnagotchi/releases/tag/v2.9.2">v2.9.2</a>. These callbacks have been deprecated as well.</p></th>
